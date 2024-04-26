@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id = "test_task_partner_tree" model = "ir.ui.view">
+        <field name = "name">res.partner.tree.inherit</field>
+        <field name = "model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name = "arch" type = "xml">
+            <field name="function" position="after">
+            <field name="partner_group"/>
+            </field>
+      </field>
+    </record>
+
+    <record id = "test_task_partner_act_window" model = "ir.actions.act_window">
+        <field name = "name">Partner</field>
+        <field name = "res_model">res.partner</field>
+        <field name = "view_mode">tree,form</field>
+    </record>
+
+    <menuitem id = "test_task_partner_menu"
+            action = "test_task_partner_act_window"
+            name = "Partner"
+            parent= "test_task_list_menu"
+            sequence = "1"
+    />
+</odoo>

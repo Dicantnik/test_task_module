@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_res_partner,access_res_partner,model_res_partner,base.group_user,1,1,1,1
+access_product_product,access_product_product,model_product_product,base.group_user,1,1,1,1
+access_test_car,access_test_car,model_test_car,base.group_user,1,1,1,1
+access_test_order,access_test_order,model_test_order,base.group_user,1,1,1,1
+access_test_orderline,access_test_orderline,model_test_orderline,base.group_user,1,1,1,1
+access_test_route,access_test_route,model_test_route,base.group_user,1,1,1,1
